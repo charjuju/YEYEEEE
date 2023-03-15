@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>le TITRE MON GARS</title>
+	<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+	<button onclick="toggleStylesheet()">Changer le thème</button>
+	<h1>Notre entreprise d'informatique</h1>
+	<h2>Qui sommes-nous ?</h2>
+	<div class="section">
+		<h3>Notre histoire</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac tellus vestibulum, blandit velit ac, lacinia justo. Sed laoreet nunc sit amet ipsum blandit, eu lobortis mi maximus.</p>
+	</div>
+	<div class="section">
+		<h3>Nos services</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac tellus vestibulum, blandit velit ac, lacinia justo. Sed laoreet nunc sit amet ipsum blandit, eu lobortis mi maximus.</p>
+    </div>
+    <h2>Notre équipe</h2>
+    <div class="team-member">
+        <img id="profifphoto" src="antoine.png" alt="Photo de Louis">
+        <h4>Louis P</h4>
+        <p>Directeur technique</p>
+    </div>
+    <div class="team-member">
+        <img id="profifphoto" src="antoine.png" alt="Photo de Jude">
+        <h4>Jude M</h4>
+        <p>Développeur Front-end</p>
+    </div>
+    <div class="team-member">
+        <img id="profifphoto" src="antoine.png" alt="Photo de Théo">
+        <h4>Théo A</h4>
+        <p>Développeur Back-end</p>
+    </div>
+    <div class="team-member">
+        <img id="profifphoto" src="antoine.png" alt="Photo de Nils">
+        <h4>Nils Y</h4>
+        <p>Designer UX/UI</p>
+    </div>
+    <div class="team-member">
+        <img id="profifphoto" src="antoine.png" alt="Photo de coco le peroket">
+        <h4>coco c</h4>
+        <p>Designer UX/UI</p>
+    </div>
+    <script>
+        // Ajouter du code JavaScript ici si nécessaire
+    </script>
+    </body>
+	<script>
+		function toggleStylesheet() {
+  // Récupère tous les éléments <link> dans la page
+  	const links = document.getElementsByTagName('link');
+  // Parcourt tous les éléments <link> pour trouver le fichier CSS actuellement utilisé
+  	for (let i = 0; i < links.length; i++) {
+    	const link = links[i];
+    // Si le fichier CSS actuellement utilisé est style1.css, change-le pour style2.css
+    if (link.getAttribute('href') === 'style1.css') {
+      	link.setAttribute('href', 'style2.css');
+    // Sinon, change-le pour style1.css
+    } else {
+      	link.setAttribute('href', 'style1.css');
+    	}
+  	}
+	}
+	</script>
+</html>

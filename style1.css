@@ -1,0 +1,70 @@
+body {
+    background-color: #1c1f26;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+h1 {
+    font-size: 64px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+#profifphoto {
+    height: 100px;
+}
+
+.section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2b2e3b;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+.section h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.section p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.team-member {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2b2e3b;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.team-member img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+.team-member h4 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.team-member p {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
