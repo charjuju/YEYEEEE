@@ -17,6 +17,12 @@ h2 {
     background-color: #FFFF00;
 }
 
+#imageButton {
+    background-color: #ffff0000;
+    border: none;
+    outline: none;
+}
+
 #profifphoto {
     height: 100px;
 }
