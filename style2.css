@@ -24,6 +24,12 @@ h2 {
     outline: none;
 }
 
+#imageButton:hover {
+    background-color: #ff00ff37;
+    border: none;
+    outline: none;
+}
+
 #profifphoto {
     height: 100px;
 }
