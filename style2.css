@@ -18,6 +18,7 @@ h2 {
 }
 
 #imageButton {
+    transition: background-color 0.2s ease-in-out;
     background-color: #ffff0000;
     border: none;
     outline: none;
