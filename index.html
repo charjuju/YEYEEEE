@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="style1.css">
 </head>
 <body>
-	<button onclick="toggleStylesheet()">Changer le thème</button>
+	<button onclick="toggleStylesheet('style2.css')">confeti</button>
+	<button onclick="toggleStylesheet('style1.css')">darck mode</button>
 	<h1>Notre entreprise d'informatique</h1>
 	<h2>Qui sommes-nous ?</h2>
 	<div class="section">
@@ -48,20 +49,28 @@
     </script>
     </body>
 	<script>
-		function toggleStylesheet() {
-  // Récupère tous les éléments <link> dans la page
-  	const links = document.getElementsByTagName('link');
-  // Parcourt tous les éléments <link> pour trouver le fichier CSS actuellement utilisé
-  	for (let i = 0; i < links.length; i++) {
-    	const link = links[i];
-    // Si le fichier CSS actuellement utilisé est style1.css, change-le pour style2.css
-    if (link.getAttribute('href') === 'style1.css') {
-      	link.setAttribute('href', 'style2.css');
-    // Sinon, change-le pour style1.css
-    } else {
-      	link.setAttribute('href', 'style1.css');
-    	}
-  	}
+        function isStyle(str) {
+            "style";
+            for (let i = 0; i < 5; i += 1) {
+                if ("style".charAt(i) !== str.charAt(i)) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+	function toggleStylesheet(style) {
+        // Récupère tous les éléments <link> dans la page
+  	    const links = document.getElementsByTagName('link');
+        // Parcourt tous les éléments <link> pour trouver le fichier CSS actuellement utilisé
+  	    for (let i = 0; i < links.length; i++) {
+        	const link = links[i];
+            // Si le fichier CSS actuellement utilisé est style1.css, change-le pour style2.css
+            if (isStyle(link.getAttribute('href')) == true) {
+              	link.setAttribute('href', style);
+            // Sinon, change-le pour style1.css
+            }
+  	    }
 	}
 	</script>
 </html>
